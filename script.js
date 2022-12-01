@@ -1,18 +1,31 @@
-// //1
+// //1 https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
 // class Movie{
 //     constructor(title,studio,rating){
 //         this.title = title;
 //         this.studio = studio;
-//         this.rating = rating;
+//        if(rating==undefined){
+//         this.rating="PG"
+//        }else{
+//         this.rating=rating;
+//        }
         
 //     }
+//     getPG(array){
+//         var result=[];
+//         for(var i=0;i<array.length;i++){
+//             if(array[i].rating=="PG"){
+//                 result.push(array[i]);
+//     }
+//         }
+//         return result;
+//     }
 // }
-// var test = new Movie("Casino Royale", "Eon Productions", "PG13");
-// console.log(test.title);
-// console.log(test.studio);
-// console.log(test.rating);
+// var movie = new Movie("Casino Royale", "Eon Productions", "PG13");
+// var movie1 = new Movie("Casino Royale", "Eon Productions");
+// var arr=[movie,movie1]
+// console.log(movie1.getPG(arr));
 // //////////////////////////////////
-// //2
+// //2 https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
 // class Circle {
 //     constructor(radius, color) {
 //       this.radius = radius;
@@ -56,7 +69,7 @@
 //   console.log(obj1.circumferenceCircle); //get circumferenceCircle
 //   ////////////////////////////////////////
 
-// //3
+// //3 Write a “person” class to hold all the details.
 // class Person{
 //     constructor(name,age,salary,gender){
 //         this.name = name;
@@ -71,17 +84,17 @@
 // console.log(test.salary);
 // console.log(test.gender);
 // //////////////////////////////////////////////////////////////
-// //4
+// //4 write a class to calculate the uber price.
 // class Uber{
-//     constructor(briyani,chicken65,shawarma){
-//             this.briyani = briyani;
-//             this.chicken65 = chicken65;
-//             this.shawarma = shawarma;
+//     constructor(car,distance,costfor1km){
+//             this.car = car;
+//             this.distance = distance;
+//             this.costfor1km = costfor1km;
 // }
-// var test = new Uber("180","80","120");
-// var sum = 0;
-// for (var i = 0; i <test.length; i++)
-// {
-// sum = sum +parseInt(test[i]);
 // }
-// console.log(sum);
+// var prize = new Uber("Audi",10,50);
+// var a = prize.car;
+// var b = prize.distance;
+// var c = prize.costfor1km;
+// console.log (a+"="+b*c);
+

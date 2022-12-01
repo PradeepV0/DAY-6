@@ -96,15 +96,17 @@ male
 //////////////////////////////////////////////////////////////
 //4
 class Uber{
-    constructor(briyani,chicken65,shawarma){
-            this.briyani = briyani;
-            this.chicken65 = chicken65;
-            this.shawarma = shawarma;
+    constructor(car,distance,costfor1km){
+            this.car = car;
+            this.distance = distance;
+            this.costfor1km = costfor1km;
 }
-var test = new Uber("180","80","120");
-var sum = 0;
-for (var i = 0; i <test.length; i++)
-{
-sum = sum +parseInt(test[i]);
 }
-console.log(sum);
+var prize = new Uber("Audi",10,50);
+var a = prize.car;
+var b = prize.distance;
+var c = prize.costfor1km;
+console.log (a+"="+b*c);
+
+Output
+Audi=500
